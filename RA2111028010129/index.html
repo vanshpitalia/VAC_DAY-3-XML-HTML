@@ -1,0 +1,84 @@
+<head>
+    <title>Restaurant Bill</title>
+</head>
+
+<body>
+  <center>
+  <h1>MENU:</h1>
+    <table> 
+    <thead>
+        <tr>
+            <th>Dish</th> 
+            <th>Price Per Dish</th> 
+            <th>Quantity</th> 
+        </tr>
+    <tbody>
+        <tr>
+            <td>Edmame Dumplings</td>
+            <td>525</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>spring rolls</td>
+            <td>495</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>paneer Rolls</td>
+            <td>495</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Spaghetti alfredo</td>
+            <td>1245</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>hot chilli Fried Rice</td>
+            <td>1245</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Sesame tofu</td>
+            <td>1245</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>paneer Tikka Masala</td>
+            <td>1100</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Pizza chef"s Special</td>
+            <td>1100</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>kimchi Ramen</td>
+            <td>1100</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+    </thead>
+    </table>
+
+<!-- Prepare the output table which will display the JS script of items selected from menu by user -->
+  <br><br>
+<b>ORDER:</b>
+      <table>
+        <thead>
+          <tr>
+              <th>Dish</th>
+              <th>Price</th>
+              <th>Quantity</th>
+          </tr>
+        </thead>
+    <tbody id='orderTable' oninput="updateSubtotals()"></tbody>
+    </table>
+
+<br><br>
+<b>BILL:</b>
+<br>₹<span id="perGuestSubtotal"></span>
+<center>
+
+</body>
